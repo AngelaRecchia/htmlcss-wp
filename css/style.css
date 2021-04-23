@@ -35,9 +35,7 @@ header nav li {
 }
 
 #jumbotron {
-    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/banner.jpg) ;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/banner.jpg);
     color: white;
     padding: 250px 450px 60px 60px;
     margin-bottom: 20px;
@@ -52,8 +50,11 @@ header nav li {
     font-size: 13px;
 }
 
-main img, #jumbotron {
+#jumbotron, .thumb {
     border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .titolo {
@@ -67,11 +68,14 @@ main img, #jumbotron {
     color: #AEAEAE;
 }
 
-.main-section *{
-    /* da elim */
-    height: calc(100% - 60px - 30px);
-    float: left;
-    
+.main-section > *{
+    float: left;  
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .main-section {
@@ -79,19 +83,34 @@ main img, #jumbotron {
     width: 100%;
     height: 100%;
 }
-.container::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
-aside {
+.main-section aside {
     width: 25%;
 }
 
-section {
+.main-section section {
     width: calc(50% - 20px);
     margin: 0 10px;
+}
+
+.thumb {
+    height: 230px;
+    
+}
+
+#imgsx {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#imgcenter {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/banner-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#imgdx {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-3.jpg) no-repeat center;
+    background-size: cover;
 }
 
 footer {
@@ -106,9 +125,7 @@ footer {
     background-color: #0086FF;
 }
 
-.container > header, .main-section * {
-    background-color: #ABCFE7;
-}
+
 
 .container > header {
     height: 60px;
