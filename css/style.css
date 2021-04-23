@@ -85,17 +85,16 @@ header nav li {
 }
 
 .main-section aside {
-    width: 25%;
+    width: 20%;
 }
 
 .main-section section {
-    width: calc(50% - 20px);
+    width: calc(60% - 20px);
     margin: 0 10px;
 }
 
 .thumb {
-    height: 230px;
-    
+    height: 200px;
 }
 
 #imgsx {
@@ -113,17 +112,20 @@ header nav li {
     background-size: cover;
 }
 
+.subtitle {
+    font-size: 13px;
+    font-weight: bold;
+    color: #232323;
+    padding: 15px 0;
+}
+
 footer {
     height: 40px;
     background-color:#8801FE;
     margin-top: 5px;
 }
 
-/* da elim */
-.container {
-    height: 500px;
-    background-color: #0086FF;
-}
+
 
 
 
