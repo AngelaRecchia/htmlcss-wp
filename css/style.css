@@ -52,25 +52,23 @@ header nav li {
     font-size: 13px;
 }
 
-
 main img, #jumbotron {
     border-radius: 10px;
 }
 
-.container {
-    height: 500px;
-    background-color: #0086FF;
+.titolo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
 }
 
-.container > header, .main-section * {
-    background-color: #ABCFE7;
-}
-
-.container > header {
-    height: 60px;
+.s-c-main {
+    font-size: 13px;
+    color: #AEAEAE;
 }
 
 .main-section *{
+    /* da elim */
     height: calc(100% - 60px - 30px);
     float: left;
     
@@ -102,3 +100,16 @@ footer {
     margin-top: 5px;
 }
 
+/* da elim */
+.container {
+    height: 500px;
+    background-color: #0086FF;
+}
+
+.container > header, .main-section * {
+    background-color: #ABCFE7;
+}
+
+.container > header {
+    height: 60px;
+}
