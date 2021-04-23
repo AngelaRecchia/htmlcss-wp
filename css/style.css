@@ -7,19 +7,36 @@
 body {
     width: 80%;
     margin: auto;
+    font-family:'Montserrat', sans-serif; 
 }
 
 body header img {
     height: 70px;
     padding-right: 20px;
     border-right: 1px solid #EFEFEF;
-    
 }
 
-main > header {
+header nav {
+    padding: 40px 0 30px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #A0A0A0;
+}
+
+header nav li {
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+#jumbotron {
     height: 400px;
     background-color:#E1D67A;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .container {
