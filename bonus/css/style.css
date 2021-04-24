@@ -8,7 +8,12 @@ body {
     width: 80%;
     margin: auto;
     font-family:'Montserrat', sans-serif; 
-    font-weight: 300;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+body > header {
+    margin-top: 30px;
 }
 
 body header img {
@@ -18,13 +23,17 @@ body header img {
 }
 
 header nav {
-    padding: 40px 0;
+    padding: 20px 0 40px;
 }
 
-a {
+header nav a {
     text-decoration: none;
     text-transform: uppercase;
     color: #A0A0A0;
+}
+
+a:hover {
+    color: black;
 }
 
 header nav li {
@@ -35,66 +44,67 @@ header nav li {
 }
 
 #jumbotron {
-    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/banner.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/banner-3.jpg) no-repeat center;
+    background-size: cover;
     color: white;
-    padding: 250px 450px 60px 60px;
+    padding: 250px 510px 40px 40px;
+    border-radius: 10px;
 }
 
 #jumbotron div {
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
 }
 
 #jumbotron p {
-    font-size: 13px;
-}
-
-#jumbotron, .thumb {
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-size: 15px;
 }
 
 .container header {
     margin-top: 35px;
+    margin-left: 25px;
 }
 
 .titolo {
     font-size: 30px;
     font-weight: 700;
     color: black;
+    transform: scaleY(1.3);
+    font-weight: 900;
 }
 
 .s-c-main {
     font-size: 13px;
-    color: #AEAEAE;
+    color: #A0A0A0;
 }
 
-.main-section {
+.row {
     margin: 35px 0;
 }
-.main-section > *{
-    float: left;  
+
+.row .col{
+    float: left;
 }
 
-.main-section::after {
+.row::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.main-section aside {
-    width: 20%;
+.col {
+    width: calc(100% / 3 - 20px);
 }
 
-.main-section section {
-    width: calc(60% - 20px);
-    margin: 0 10px;
+.col.center {
+    margin: 0 30px;
 }
 
 .thumb {
     height: 200px;
+    border-radius: 5px;
 }
 
 .thumb:hover {
@@ -103,28 +113,78 @@ header nav li {
   filter: brightness(90%);
 }
 
-#imgsx {
+#imgtopsx {
     background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-1.jpg) no-repeat center;
     background-size: cover;
 }
 
-#imgcenter {
-    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/banner-2.jpg) no-repeat center;
+#imgtopcenter {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-2.jpg) no-repeat center;
     background-size: cover;
 }
 
-#imgdx {
+#imgtopdx {
     background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-3.jpg) no-repeat center;
     background-size: cover;
 }
 
-.subtitle {
-    font-size: 13px;
-    font-weight: bold;
-    color: #232323;
-    padding: 15px 0;
+#imgbotsx {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-4.jpg) no-repeat center;
+    background-size: cover;
 }
 
+#imgbotcenter {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-5.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#imgbotdx {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-6.jpg) no-repeat center;
+    background-size: cover;
+}
+.testo {
+    margin: 0 20px;
+}
+
+.subtitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #232323;
+    line-height: 1.6;
+    padding: 15px 0 10px 0;
+}
+
+.info img {
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.info-text {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 15px 0;
+    color: #AFAFAF;
+    font-size: 12px;
+}
+
+.info-text > * {
+    margin-left: 6px;
+}
+
+.autore a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #868686;
+}
+
+.autore a:hover {
+    color: black;
+}
+
+.data {
+    padding-right: 6px;
+    border-right: 1px solid #AFAFAF;
+}
 footer {
     margin-bottom: 15px;
     color: black;
@@ -134,5 +194,5 @@ footer {
 
 .red {
     color: red;
-    font-stretch: ultra-condensed;
 }
+
