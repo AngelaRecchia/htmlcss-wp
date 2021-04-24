@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family:'Montserrat', sans-serif; 
+    font-weight: 300;
+}
+
+body header img {
+    height: 70px;
+    padding-right: 20px;
+    border-right: 1px solid #EFEFEF;
+}
+
+header nav {
+    padding: 40px 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #A0A0A0;
+}
+
+header nav li {
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+#jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/banner.jpg);
+    color: white;
+    padding: 250px 450px 60px 60px;
+}
+
+#jumbotron div {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#jumbotron p {
+    font-size: 13px;
+}
+
+#jumbotron, .thumb {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container header {
+    margin-top: 35px;
+}
+
+.titolo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.s-c-main {
+    font-size: 13px;
+    color: #AEAEAE;
+}
+
+.main-section {
+    margin: 35px 0;
+}
+.main-section > *{
+    float: left;  
+}
+
+.main-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-section aside {
+    width: 20%;
+}
+
+.main-section section {
+    width: calc(60% - 20px);
+    margin: 0 10px;
+}
+
+.thumb {
+    height: 200px;
+}
+
+.thumb:hover {
+    -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+  filter: brightness(90%);
+}
+
+#imgsx {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#imgcenter {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/banner-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#imgdx {
+    background: linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%), url(../img/img-3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.subtitle {
+    font-size: 13px;
+    font-weight: bold;
+    color: #232323;
+    padding: 15px 0;
+}
+
+footer {
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+
+.red {
+    color: red;
+    font-stretch: ultra-condensed;
+}
